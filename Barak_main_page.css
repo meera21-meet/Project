@@ -1,0 +1,107 @@
+@keyframes instruction_underline_color
+{
+	from
+	{
+		text-decoration-color: #950000;
+		text-shadow:2px 2px navy;
+	}
+	to
+	{	
+		text-decoration-color: red;
+		text-shadow:2px 2px #0000FF;
+	}
+}
+
+@keyframes glowing_title {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #000C9B, 0 0 40px #000C9B, 0 0 50px #000C9B, 0 0 60px #000C9B, 0 0 70px #000C9B;
+    color: red;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #1FFF00, 0 0 40px #1FFF00, 0 0 50px #1FFF00, 0 0 60px #1FFF00, 0 0 70px #1FFF00, 0 0 80px #1FFF00;
+    color: #C60000;
+  }
+}
+
+body
+{
+	background-image: url("Barak_bg_image.jpg");
+}
+
+#project_name
+{
+	animation: glowing_title 1s ease-in-out infinite alternate;
+}
+
+#title
+{
+	text-align: center;
+	font-weight: bold;
+}
+
+#instruction
+{
+	font-size: 40px;
+	text-align: center;
+	color: yellow;
+	text-decoration: underline dotted red;
+	animation: instruction_underline_color 1s linear 0s infinite alternate forwards;
+}
+
+#time_title
+{
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	color: #E4CF00;
+	font-size: 22px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#time_question
+{
+	color: #E4CF00;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#time_answer
+{
+	color: #E4CF00;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#food_title
+{
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	color: #AB0000;
+	font-size: 22px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#food_question
+{
+	color: #AB0000;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#food_answer
+{
+	color: #AB0000;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#about
+{
+	background-color: blue; 
+	border: double;
+	color: #33FF93;
+	padding: 20px 32px;
+  	text-align: center;
+  	font-size: 25px;
+  	border-radius: 12px;
+}

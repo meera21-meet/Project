@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Second page</title>
+	<script>
+		var time_sum=localStorage.getItem("time_sum");
+		if (time_sum>1440)
+		{
+			window.document.location="./Barak_time_choose_celine.html";
+		}
+		if (time_sum<=0)
+		{
+			alert("There is a problem with the time you filled in (if you even did...) because it shows as if you didn't fill the time at all.")
+			alert("I'm sending you to the form again to fill the time right");
+			window.document.location="./Barak_time_choose_celine.html";
+		}
+	</script>
+</head>
+<body>
+	<p id="second_time1">Time1</p>
+	<p id="second_time2">Time2</p>
+	<p id="second_time3">Time3</p>
+	<p id="second_time4">Time4</p>
+	<p id="second_time5">Time5</p>
+	<p id="second_time6">Time6</p>
+	<p id="second_want">Want</p>
+	<p id="second_time7">Time7</p>
+
+	<script>
+		var time1=localStorage.getItem("time1");
+		var time2=localStorage.getItem("time2");
+		var time3=localStorage.getItem("time3");
+		var time4=localStorage.getItem("time4");
+		var time5=localStorage.getItem("time5");
+		var time6=localStorage.getItem("time6");
+		var time7=localStorage.getItem("time7");
+		var want=localStorage.getItem("want");
+		var time_sum=localStorage.getItem("time_sum");
+
+		document.getElementById("second_time1").innerHTML=time1;
+		document.getElementById("second_time2").innerHTML=time2;
+		document.getElementById("second_time3").innerHTML=time3;
+		document.getElementById("second_time4").innerHTML=time4;
+		document.getElementById("second_time5").innerHTML=time5;
+		document.getElementById("second_time6").innerHTML=time6;
+		document.getElementById("second_time7").innerHTML=time7;
+		document.getElementById("second_want").innerHTML=want;
+
+
+	</script>
+</body>
+</html>

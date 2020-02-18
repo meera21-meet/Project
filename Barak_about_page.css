@@ -1,0 +1,68 @@
+body
+{
+	background-image: url("Barak_about_bg.png");
+}
+
+@keyframes glowing_title {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #000C9B, 0 0 40px #000C9B, 0 0 50px #000C9B, 0 0 60px #000C9B, 0 0 70px #000C9B;
+    color: red;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #1FFF00, 0 0 40px #1FFF00, 0 0 50px #1FFF00, 0 0 60px #1FFF00, 0 0 70px #1FFF00, 0 0 80px #1FFF00;
+    color: #C60000;
+  }
+}
+
+#project_name
+{
+	animation: glowing_title 1s ease-in-out infinite alternate;
+}
+
+#title
+{
+	text-align: center;
+	font-weight: bold;
+}
+
+#meaning
+{
+	text-align: center;
+	font-size: 46px;
+	color: #1A8700;
+}
+
+#CMB
+{
+	color: red;
+}
+
+#C
+{
+	color: red;
+}
+
+#M
+{
+	color: red;
+}
+
+#B
+{
+	color: red;
+}
+
+#offer
+{
+	text-align: center;
+	color: #24B900;
+	font-size: 36px;
+}
+
+#give_it_a_try
+{
+	color: #29D300;
+	text-align: center;
+	font-size: 38px;
+}
