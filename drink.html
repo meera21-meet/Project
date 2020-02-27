@@ -8,7 +8,7 @@
   <h1 align="center">Drink Water</h1>
   <br>
   <h2>How much water do you drink?</h2>
-  <form>
+  <form method="POST" name="water_form" action="./water.html">
 <input type="radio" id="bottle" name="water" value="bottle" onclick="show()">
   <label for="bottle">Bottles</label>
   <input type="radio" id="liter" name="water" value="liter" onclick="show()" >
@@ -17,20 +17,29 @@
   <label for="cups">Cups</label>
   <br>
   <br>
-  <input type="text" id="text" name="water" style="display: none" size="3">
+  <input type="number" id="amount" name="amount" style="display: none" size="3">
   <br>
   <br>
-  <input type="submit" value="Submit">
+  <input type="submit" value="Submit" onclick="save_data()">
 </form>
 <script>
 function show() {
-  var x = document.getElementById("text");
+  var x = document.getElementById("amount");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
     x.style.display = "block";
   }
-} 
+}
+
+function save_data()
+{
+  var type=document.forms.water_form.elements.water.value;
+  localStorage.setItem("type",type);
+  var amount=document.getElementById("amount").value;
+  localStorage.setItem("amount",amount);
+}
+
 </script>
 </body>
 </html>
