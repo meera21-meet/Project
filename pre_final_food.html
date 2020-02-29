@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <link rel="stylesheet" type="text/css" href="food.css">
+<!-- <link rel="stylesheet" href="food.css">  -->
+<script type="text/javascript" src="pre_final_food.js"></script>
+<link rel="stylesheet" type="text/css" href="pre_final_CMB.css">
+<title>food</title>
+</head>
+<body style="background-image: url('form_bg4.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;">
+  <h1 id="title"><span id="project_name" onclick="home()">CMB</span></h1>
+<script>
+function home()
+{
+  window.document.location="./pre_final_main_page.html";
+}
+</script>
+  <h1 align="center" id="the_title"> Food Picker </h1>
+  <br>
+  <div>
+    <h2> What kind of meal do you want to eat? </h2>
+    <br>
+<form method="POST" name="food_form" action="./pre_final_food2.html">
+    <input type="radio" id="breakfast" name="Food" value="breakfast" size=10 >
+  <label for="breakfast">Breakfast</label>
+  <br>
+  <br>
+  <input type="radio" id="lunch" name="Food" value="lunch" >
+  <label for="lunch">Lunch</label>
+  <br>
+  <br>
+  <input type="radio" id="dinner" name="Food" value="dinner">
+  <label for="dinner">Dinner</label>
+  <br>
+  <br>
+  <input type="radio" id="msnack" name="Food" value="msnack">
+  <label for="msnack">Midnight snack</label>
+ <br>
+  <br>
+  <input type="radio" id="snack" name="Food" value="snack">
+  <label for="snacks">Snacks</label>
+  <br>
+  <br>
+  <input type="submit" value="Submit" onclick="navigate();">
+</form>
+</div>
+
+
+</body>
+</html>

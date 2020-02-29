@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="drink.css">
+  <link rel="stylesheet" type="text/css" href="pre_final_CMB.css">
+  <title></title>
+</head>
+<body style="background-image: url('form_bg3.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;">
+  <h1 id="title"><span id="project_name" onclick="home()">CMB</span></h1>
+<script>
+function home()
+{
+  window.document.location="./pre_final_main_page.html";
+}
+</script>
+  <h1 align="center" id="drink">Drink Water</h1>
+  <br>
+  <h2>How much water do you drink?</h2>
+  <form method="POST" name="water_form" action="./water.html">
+<input type="radio" id="bottle" name="water" value="bottle" onclick="show()">
+  <label for="bottle">Bottles</label>
+  <input type="radio" id="liter" name="water" value="liter" onclick="show()" >
+  <label for="liter">Liters</label>
+  <input type="radio" id="cups" name="water" value="cups" onclick="show()" >
+  <label for="cups">Cups</label>
+  <br>
+  <br>
+  <input type="number" id="amount" name="amount" style="display: none" size="3">
+  <br>
+  <br>
+  <input type="submit" value="Submit" onclick="save_data()">
+</form>
+<script>
+function show() {
+  var x = document.getElementById("amount");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function save_data()
+{
+  var type=document.forms.water_form.elements.water.value;
+  localStorage.setItem("type",type);
+  var amount=document.getElementById("amount").value;
+  localStorage.setItem("amount",amount);
+}
+
+</script>
+</body>
+</html>
