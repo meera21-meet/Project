@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="pre_final_CMB.css">
+	<title>Water</title>
+</head>
+<body>
+	<h1 id="title"><span id="project_name" onclick="home()">CMB</span></h1>
+<script>
+function home()
+{
+  window.document.location="./pre_final_main_page.html";
+}
+</script>
+	<p id="type">type</p>
+	<p id="amount">amount</p>
+	<p>Hi</p>
+
+	<script>
+		var type=localStorage.getItem("type");
+		var amount=localStorage.getItem("amount");
+		document.getElementById("type").innerHTML=type;
+		document.getElementById("amount").innerHTML=amount;
+	</script>
+
+</body>
+</html>
