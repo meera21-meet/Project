@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<link rel="stylesheet" href="pre_final_food2.css">
+<link rel="stylesheet" type="text/css" href="pre_final_CMB.css">
+<title>food5</title>
+</head>
+<body style="background-image: url('form_bg4.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;">
+  <h1 id="title"><span id="project_name" onclick="home()">CMB</span></h1>
+<script>
+function home()
+{
+  window.document.location="./pre_final_main_page.html";
+}
+</script>
+  <h1 align="center"> Food Picker </h1>
+  <div>
+    <h2> Do you want sweet or salty snacks? </h2>
+<form method="POST" name="food_form2" action="./pre_final_next.html">
+    <input type="radio" id="sweet" name="food" value="sweet" size=10 >
+  <label for="sweet">Sweet snacks</label>
+  <input class="margin4" type="radio" id="salty" name="food" value="salty" >
+  <label for="salty">Salty snacks</label>
+  <br>
+  <img src="pre_final_sweets.jpg" width="350" height="300">
+  <img src="pre_final_salty.jpg" width="350" height="300">
+  <br>
+  <br>
+  <input type="submit" value="Submit" onclick="save();">
+</form>
+</div>
+<script type="text/javascript" src="pre_final_food.js"></script>
+</body>
+</html>
