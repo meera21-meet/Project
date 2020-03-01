@@ -43,6 +43,18 @@ function home()
 	}
 
 
+		#button
+		{
+			background-color: green; 
+			border: solid;
+			color: white;
+			padding: 8px 30px;
+  			text-align: center;
+  			font-size: 25px;
+  			border-radius: 12px;
+  		}
+
+
 
 		.starter-template{
 			padding: 3rem 1.5rem;
@@ -189,9 +201,41 @@ function home()
 	<h3>2.popcorn </h3>
 
 
-	<img src="amms.jpg" width="450" height="400">
+	<img src="amms.jpg" width="552" height="400">
 	
-	<img src="amms2.jpg" width="450" height="400">
+	<img src="amms2.jpg" width="552" height="400">
+
+	<br><br>
+	<div align="center">
+	<button id="button" onclick="change();">Change</button>
+	</div>
+
+	<script>
+		function change()
+		{
+			var before=1;
+			do
+			{
+				var random=Math.floor(Math.random() * 3) + 1;
+			}
+			while(random==before);
+			switch(random)
+			{
+				case 1:
+					window.document.location="./meeraam-ms.html";
+					break;
+				case 2:
+					window.document.location="./meeragr-ms.html";
+					break;
+				case 3:
+					window.document.location="./meerait-ms.html";
+					break;
+				default:
+					alert("An error has occured. Tell CMB owners about it");
+					console.log("Error with the random number");
+		}
+		}
+	</script>
 	
 </head>
 
